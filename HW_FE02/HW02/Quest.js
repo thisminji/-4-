@@ -4,7 +4,7 @@ const arr = [1, 2, 3, 4, 5, 6, 7];
 const arr2 = [1, [2, 3, [4, 5, 6], 7], [8, 9]];
 
 // Q1-1. arr에서 3출력 (Hint:인덱싱은 0부터 시작!)
-  console.log(2);
+  console.log(arr[2]); 
 // Q1-2. arr에서 [1,2,3]출력 (Hint:Array.js에서 slice함수를 사용해볼까요?)
   const sliced = arr.slice(0,3) 
   console.log(sliced);
