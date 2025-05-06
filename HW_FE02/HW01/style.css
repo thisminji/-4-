@@ -1,3 +1,4 @@
+/* step1/style.css내용을 붙여넣기! */
 body * {
   /* border: 1px solid #333; */
 }
@@ -27,7 +28,8 @@ body * {
 .box:nth-child(1){
   grid-row: 1/2;
   grid-column: 1/5;
-
+  background-color: black;
+  color: #FBE4B4;
 }
 
 .box:nth-child(2){
@@ -48,11 +50,22 @@ body * {
 
 }
 
-
-
-
-
 /* 여기에 반응형 디자인을 해주세요 */
 
+@media (min-width: 1024px) {
+  .box:nth-child(1) {
+    font-size: 36px;
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box:nth-child(1) {
+    font-size: 28px;
+  }
+}
 
+@media (max-width: 767px) {
+  .box:nth-child(1) {
+    font-size: 20px;
+  }
+}

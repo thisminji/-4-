@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4단계 : JS 적용해보기</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Animate.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4단계 : JS 적용해보기</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="Animate.css" />
-  <link rel="stylesheet" href="header.css" />  
-</head>
+  <body>
+    <header>
+      <div class="logo">멋쟁이 반응형 사이트🦁</div>
+      <div class="nav">
+        <div>홈</div>
+        <div>서비스</div>
+        <div>문의</div>
+      </div>
+      <div class="menu-icon">☰</div>
+    </header>
 
-<body>
-  <header>
-    <div class="logo">멋쟁이 반응형 사이트🦁</div>
-    <div class="nav">
-      <div>홈</div>
-      <div>서비스</div>
-      <div>문의</div>
+    <div class="container">
+      <!-- box(1) 의 내용을 수정해주세요 -->
+      <div class="container">
+        <div class="box viewport">
+          현재 뷰포트 너비: <span id="width"></span>px
+        </div>
+        <div class="box">콘텐츠 2</div>
+        <div class="box">콘텐츠 3</div>
+        <div class="box">콘텐츠 4</div>
+      </div>
     </div>
-    <div class="menu-icon">☰</div>
-  </header>
-
-  <div class="container">
-    <!-- box(1) 의 내용을 수정해주세요 -->
-    <div class="box">콘텐츠 1</div>
-    <div class="box">콘텐츠 2</div>
-    <div class="box">콘텐츠 3</div>
-    <div class="box">콘텐츠 4</div>
-  </div>
-</body>
+  </body>
+  <script>
+    const widthSpan = document.getElementById('width');
+  
+    function updateViewportWidth() {
+      widthSpan.textContent = window.innerWidth;
+    }
+  
+    window.addEventListener('resize', updateViewportWidth);
+    window.addEventListener('load', updateViewportWidth);
+  </script>
 
 </html>

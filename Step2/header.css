@@ -30,3 +30,20 @@ body{
   
   /* 여기에 해더 반응형 코드를 작성해주세요 (.nav, .menu-icon)*/ 
  
+
+  @media(min-width:768px) {
+    .menu-icon{
+      display: none;;
+    }
+
+    }
+   
+   
+    @media(max-width:768px) {
+      .nav{
+        display: none;;
+      
+      }
+
+
+    }
